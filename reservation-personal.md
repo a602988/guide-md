@@ -26,10 +26,10 @@
 
 **操作範例說明 快速連結**
 
-* [匯出已預約資料](guide/reservation-personal#匯出已預約資料)
-* [掃描取票](guide/reservation-personal#掃描取票)
+* [匯出已預約資料](/guide/reservation-personal#匯出已預約資料)
+* [掃描取票](/guide/reservation-personal#掃描取票)
 
-### [匯出已預約資料](guide/reservation-personal#匯出已預約資料)
+### [匯出已預約資料](/guide/reservation-personal#匯出已預約資料)
 
 
 1. 於`預約管理->預約管理` 列表中，點選右上角按鈕 `匯出` 
@@ -39,7 +39,7 @@
 
 
 
-### [掃描取票](guide/reservation-personal#掃描取票)
+### [掃描取票](/guide/reservation-personal#掃描取票)
 
 
 1. 於`預約管理->預約管理`  列表中，點選右上角按鈕 `掃描取票`

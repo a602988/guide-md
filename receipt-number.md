@@ -24,7 +24,7 @@
 
 
 
-### [設定字軌](guide/receipt-number#設定字軌)
+### [設定字軌](/guide/receipt-number#設定字軌)
 
 範例
 

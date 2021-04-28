@@ -28,14 +28,14 @@
 
 **操作範例說明 快速連結**
 
-* [新增參數項目](guide/site-parameter-group#新增參數項目)
-* [產品規格](guide/site-parameter-group#產品規格)
-* [商品通用運送說明](guide/site-parameter-group#商品通用運送說明)
-* [設定金流群組](guide/site-parameter-group#設定金流群組)
-* [預約位置](guide/site-parameter-group#預約位置)
-* [編輯器樣板](guide/site-parameter-group#編輯器樣板)
+* [新增參數項目](/guide/site-parameter-group#新增參數項目)
+* [產品規格](/guide/site-parameter-group#產品規格)
+* [商品通用運送說明](/guide/site-parameter-group#商品通用運送說明)
+* [設定金流群組](/guide/site-parameter-group#設定金流群組)
+* [預約位置](/guide/site-parameter-group#預約位置)
+* [編輯器樣板](/guide/site-parameter-group#編輯器樣板)
 
-### [新增參數項目](guide/site-parameter-group#新增參數項目)
+### [新增參數項目](/guide/site-parameter-group#新增參數項目)
 
 1. 於 `控制台->參數群組` 列表中，點選右上角按鈕 `新增` 
 2. 進去新增頁面，設定以下內容 ( 範例 )，
@@ -53,7 +53,7 @@
 
 
 
-### [產品規格](guide/site-parameter-group#產品規格)
+### [產品規格](/guide/site-parameter-group#產品規格)
 
 設定`欄位`：群組類別：spec，則於 `商品管理-商品管理` 中的
 `產品規格`，則會出現顏色與重量的下拉選單。
@@ -100,7 +100,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [商品通用運送說明](guide/site-parameter-group#商品通用運送說明)
+### [商品通用運送說明](/guide/site-parameter-group#商品通用運送說明)
 
 每個案件設計不同，此會出現當商品有運送說明區塊時，會自動帶出來。
 
@@ -126,7 +126,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [設定金流群組](guide/site-parameter-group#設定金流群組)
+### [設定金流群組](/guide/site-parameter-group#設定金流群組)
 
 金流群組改念為，如果當您所有商品都是相同付款方式時，您可以建立一個預設群組，於商品建置時選取這個群組，那麼未來您增加一個付款方式就不用一個一個商品去增加。
 如果您有部分大型商品，不適用例如 超商付款取貨這種方式，那麼您可以建立一個群組為 **大型商品適用** 的群組運用。
@@ -156,7 +156,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [設定物流群組](guide/site-parameter-group#設定物流群組)
+### [設定物流群組](/guide/site-parameter-group#設定物流群組)
 
 物流群組改念為，如果當您所有商品都是相同取貨方式時，您可以建立一個預設群組，於商品建置時選取這個群組，那麼未來您增加一個取貨方式就不用一個一個商品去增加。
 如果您有部分大型商品，不適用例如 超商取貨這種方式，那麼您可以建立一個群組為 **大型商品適用** 的群組運用。
@@ -184,7 +184,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [預約位置](guide/site-parameter-group#預約位置)
+### [預約位置](/guide/site-parameter-group#預約位置)
 
 此依據各別專案建置的項目，用於課程、活動位置或教室等建立。
 
@@ -207,7 +207,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [編輯器樣板](guide/site-parameter-group#編輯器樣板)
+### [編輯器樣板](/guide/site-parameter-group#編輯器樣板)
 
 
 1. 於 `控制台->參數群組` 列表，找出 `編輯器樣板	`  項目

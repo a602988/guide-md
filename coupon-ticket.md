@@ -29,12 +29,12 @@
 
 **操作範例說明 快速連結**
 
-* [歸戶折價卷](guide/coupon-ticket#歸戶折價卷)
-* [訂單使用折價卷](guide/coupon-ticket#訂單使用折價卷)
-* [補送折價卷事件](guide/coupon-ticket#補送折價卷事件)
+* [歸戶折價卷](/guide/coupon-ticket#歸戶折價卷)
+* [訂單使用折價卷](/guide/coupon-ticket#訂單使用折價卷)
+* [補送折價卷事件](/guide/coupon-ticket#補送折價卷事件)
 
 
-### [歸戶折價卷](guide/coupon-ticket#歸戶折價卷)
+### [歸戶折價卷](/guide/coupon-ticket#歸戶折價卷)
 
 此為商品級折扣。
 
@@ -52,7 +52,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [訂單使用折價卷](guide/coupon-ticket#訂單使用折價卷)
+### [訂單使用折價卷](/guide/coupon-ticket#訂單使用折價卷)
 
 此為商品級折扣。
 
@@ -72,7 +72,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [補送折價卷事件](guide/coupon-ticket#補送折價卷事件)
+### [補送折價卷事件](/guide/coupon-ticket#補送折價卷事件)
 
 此為商品級折扣。
 

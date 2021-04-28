@@ -8,7 +8,7 @@
 
 * 後台手動新增的金流，不會自動串接金流處理，僅功能僅為記錄使用。
 
-* 訂單處理流程，請參見 [訂單資料](guide/order-form)。
+* 訂單處理流程，請參見 [訂單資料](/guide/order-form)。
 
 * 無效訂單 用於非使用者行為的取消，此不計入失敗訂單統計等
 
@@ -52,21 +52,21 @@
 
 **操作範例說明 快速連結**
 
-* [新增訂單金流紀錄](guide/order-payment#新增訂單金流紀錄)
-* [退貨單退款](guide/order-payment#退貨單退款)
-* [信用卡退貨單待退款](guide/order-payment#信用卡退貨單待退款)
-* [信用卡退貨單退款](guide/order-payment#信用卡退貨單退款)
-* [更改付款狀態](guide/order-payment#更改付款狀態)
-* [已付款](guide/order-payment#已付款)
-* [匯出金流資料](guide/order-payment#匯出金流資料)
-* [批次異動狀態](guide/order-payment#批次異動狀態)
-* [建立金流的自訂篩選](guide/order-payment#建立金流的自訂篩選)
-  * [待付款](guide/order-payment#待付款)
-  * [待退款](guide/order-payment#待退款)
-  * [待請款](guide/order-payment#待請款)
-  * [待請退](guide/order-payment#待請退)
+* [新增訂單金流紀錄](/guide/order-payment#新增訂單金流紀錄)
+* [退貨單退款](/guide/order-payment#退貨單退款)
+* [信用卡退貨單待退款](/guide/order-payment#信用卡退貨單待退款)
+* [信用卡退貨單退款](/guide/order-payment#信用卡退貨單退款)
+* [更改付款狀態](/guide/order-payment#更改付款狀態)
+* [已付款](/guide/order-payment#已付款)
+* [匯出金流資料](/guide/order-payment#匯出金流資料)
+* [批次異動狀態](/guide/order-payment#批次異動狀態)
+* [建立金流的自訂篩選](/guide/order-payment#建立金流的自訂篩選)
+  * [待付款](/guide/order-payment#待付款)
+  * [待退款](/guide/order-payment#待退款)
+  * [待請款](/guide/order-payment#待請款)
+  * [待請退](/guide/order-payment#待請退)
 
-### [新增訂單金流紀錄](guide/order-payment#新增訂單金流紀錄)
+### [新增訂單金流紀錄](/guide/order-payment#新增訂單金流紀錄)
 
 
 1. 於 `訂單管理->金流資料` 列表中，點選右上角按鈕 `新增`
@@ -86,7 +86,7 @@
 |收款狀態|`單選`|收款成功 *(人工確認是否收款)*|
 
 
-### [退貨單退款](guide/order-payment#退貨單退款)
+### [退貨單退款](/guide/order-payment#退貨單退款)
 
 
 1. 於 `訂單管理->金流資料` 列表中，點選右上角按鈕 `新增`
@@ -105,7 +105,7 @@
 |繳款狀態|`單選`|已成功|
 |收款狀態|`單選`|收款成功 *(人工確認是否收款)* |
 
-### [信用卡退貨單待退款](guide/order-payment#信用卡退貨單待退款)
+### [信用卡退貨單待退款](/guide/order-payment#信用卡退貨單待退款)
 
 建立退貨須待請退的金流，方便建立報表，匯出使用。
 
@@ -125,7 +125,7 @@
 |繳款狀態|`單選`|待處理|
 |收款狀態|`單選`|待處理|
 
-### [信用卡退貨單退款](guide/order-payment#信用卡退貨單退款)
+### [信用卡退貨單退款](/guide/order-payment#信用卡退貨單退款)
 
 直接退貨退款，需至信用卡金流端去請退款。
 
@@ -145,7 +145,7 @@
 |繳款狀態|`單選`|已成功|
 |收款狀態|`單選`|已成功 *(人工信用卡端退款)* |
 
-### [更改付款狀態](guide/order-payment#更改付款狀態)
+### [更改付款狀態](/guide/order-payment#更改付款狀態)
 
 
 1. 於 `訂單管理->金流資料` 列表中，點選需要異動金流資料 `編輯`
@@ -158,7 +158,7 @@
 |收款狀態|`單選`|請自行選擇|
 
 
-### [已付款](guide/order-payment#已付款)
+### [已付款](/guide/order-payment#已付款)
 
 
 1. 於 `訂單管理->金流資料` 列表中，點選需要異動金流資料 `編輯`
@@ -172,21 +172,21 @@
 |收款狀態|`單選`|收款成功 *(人工確認是否收款)* |
 |同步變更 訂單 / 退貨單 的付款狀態|`單選`|勾選|
 
-### [匯出金流資料](guide/order-payment#匯出金流資料)
+### [匯出金流資料](/guide/order-payment#匯出金流資料)
 
 1. 於 `訂單管理->金流資料`列表中，可點選 `進階篩選` 功能，篩選想要的資料
 1. 並於 `訂單管理->金流資料` 列表中，勾選要匯出的資料
 2. 點選右上角按鈕 `批次->匯出金流資料`
 
-### [批次異動狀態](guide/order-payment#批次異動狀態)
+### [批次異動狀態](/guide/order-payment#批次異動狀態)
 
 1. 於 `訂單管理->金流資料`列表中，，篩選想要的資料
 2. 點選右上角按鈕點選 `異動多重狀態` 功能
 3. 於彈跳視窗中，設定想要的異動狀態
 
-### [建立金流的自訂篩選](guide/order-payment#建立金流的自訂篩選)
+### [建立金流的自訂篩選](/guide/order-payment#建立金流的自訂篩選)
 
-### [待付款](guide/order-payment#待付款)
+### [待付款](/guide/order-payment#待付款)
 
 
 1. 於 `訂單管理->金流資料` 列表中，點選右上角按鈕 `進階搜尋`
@@ -214,7 +214,7 @@ _範例2：請自行依據實際需求調整_
 |排序|`數字`|1|
 
 
-### [待退款](guide/order-payment#待退款)
+### [待退款](/guide/order-payment#待退款)
 
 
 1. 於 `訂單管理->金流資料` 列表中，點選右上角按鈕 `進階搜尋`
@@ -242,7 +242,7 @@ _範例2：請自行依據實際需求調整_
 
 
 
-### [待請款](guide/order-payment#待請款)
+### [待請款](/guide/order-payment#待請款)
 
 可用於跟金流公司請款報表。
 
@@ -271,7 +271,7 @@ _範例2：請自行依據實際需求調整_
 |排序|`數字`|1|
 
 
-### [待請退](guide/order-payment#待請退)
+### [待請退](/guide/order-payment#待請退)
 
 可用於跟金流公司請款報表。
 

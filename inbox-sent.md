@@ -26,5 +26,5 @@
 
 **操作範例說明 快速連結**
 
-* [回覆郵件](guide/inbox-received#回覆郵件)
+* [回覆郵件](/guide/inbox-received#回覆郵件)
 

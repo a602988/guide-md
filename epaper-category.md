@@ -19,9 +19,9 @@
 
 **操作範例說明 快速連結**
 
-* [新增電子報類別](guide/epaper-category#新增電子報類別)
+* [新增電子報類別](/guide/epaper-category#新增電子報類別)
 
-### [新增電子報類別](guide/epaper-category#新增電子報類別)
+### [新增電子報類別](/guide/epaper-category#新增電子報類別)
 
 1. 於 `電子報->電子報類別 ` 列表中，點選右上角按鈕 `新增` 
 2. 進去新增頁面，設定以下內容 ( 範例 )，

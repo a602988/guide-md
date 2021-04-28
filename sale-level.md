@@ -2,7 +2,7 @@
 
 功能路徑：`促銷活動->等級優惠`
 
-欄位的詳細說明與計算規則，請先了解後設定。請參見 [機制說明=>折扣計算說明](guide/web#折扣說明與計算規則)
+欄位的詳細說明與計算規則，請先了解後設定。請參見 [機制說明=>折扣計算說明](/guide/web#折扣說明與計算規則)
 
 
 ##  功能說明
@@ -37,13 +37,13 @@
 
 以下範例為基本設定，其他欄位請依據需求輸入
 
-* [A分類商品9折](guide/sale-level#A分類商品9折)
-* [A商品9折](guide/sale-level#A分類商品9折)
-* [vip全館9折](guide/sale-level#vip全館9折)
+* [A分類商品9折](/guide/sale-level#A分類商品9折)
+* [A商品9折](/guide/sale-level#A分類商品9折)
+* [vip全館9折](/guide/sale-level#vip全館9折)
 
 
 
-### [A分類商品9折](guide/sale-level#A分類商品9折)
+### [A分類商品9折](/guide/sale-level#A分類商品9折)
 
 此為商品級折扣。
 
@@ -58,7 +58,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [A商品9折](guide/sale-level#A分類商品9折)
+### [A商品9折](/guide/sale-level#A分類商品9折)
 
 此為商品級折扣。
 
@@ -74,7 +74,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [vip全館9折](guide/sale-level#vip全館9折)
+### [vip全館9折](/guide/sale-level#vip全館9折)
 
 此為商品級折扣。
 

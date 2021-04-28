@@ -24,10 +24,10 @@
 
 **操作範例說明 快速連結**
 
-* [異動場次人數](guide/reservation-maneuver#異動場次人數)
-* [停用場次時段](guide/reservation-maneuver#停用場次時段)
+* [異動場次人數](/guide/reservation-maneuver#異動場次人數)
+* [停用場次時段](/guide/reservation-maneuver#停用場次時段)
 
-### [異動場次人數](guide/reservation-maneuver#異動場次人數)
+### [異動場次人數](/guide/reservation-maneuver#異動場次人數)
 
 
 1. 於 `預約設定->機動場次` 列表中，點選右上角按鈕 `新增` 
@@ -44,7 +44,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [停用場次時段](guide/reservation-maneuver#停用場次時段)
+### [停用場次時段](/guide/reservation-maneuver#停用場次時段)
 
 
 1. 於 `預約設定->機動場次` 列表中，點選右上角按鈕 `新增`

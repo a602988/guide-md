@@ -21,9 +21,9 @@
 
 **操作範例說明 快速連結**
 
-* [新增電子報名單](guide/epaper-subscriber#新增電子報名單)
+* [新增電子報名單](/guide/epaper-subscriber#新增電子報名單)
 
-### [新增電子報名單](guide/epaper-subscriber#新增電子報名單)
+### [新增電子報名單](/guide/epaper-subscriber#新增電子報名單)
 
 1. 於 `電子報->訂閱名單 ` 列表中，點選右上角按鈕 `新增` 
 2. 進去新增頁面，設定以下內容 ( 範例 )，

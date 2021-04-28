@@ -19,11 +19,11 @@
 
 **操作範例說明 快速連結**
 
-* [公休](guide/holiday-category#公休)
-* [平日](guide/holiday-category#平日)
-* [假日](guide/holiday-category#假日)
+* [公休](/guide/holiday-category#公休)
+* [平日](/guide/holiday-category#平日)
+* [假日](/guide/holiday-category#假日)
 
-### [公休](guide/holiday-category#公休)
+### [公休](/guide/holiday-category#公休)
 
 * 設定公休，則那天都不能預約。
 
@@ -41,7 +41,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [平日](guide/holiday-category#平日)
+### [平日](/guide/holiday-category#平日)
 
 * 設定平日，則那天都可預約。
 
@@ -61,7 +61,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [假日](guide/holiday-category#假日)
+### [假日](/guide/holiday-category#假日)
 
 
 1. 於 `假日管理->假日設定` 列表中，點選右上角按鈕 `新增`
