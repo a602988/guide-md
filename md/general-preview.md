@@ -8,23 +8,23 @@
 
 **操作範例說明 快速連結**
 
-* [預覽](/guide/public-preview#預覽)
-* [預覽草稿](/guide/public-preview#預覽草稿)
-* [儲存草稿](/guide/public-preview#儲存草稿)
-* [載入草稿](/guide/public-preview#載入草稿)
-* [刪除草稿](/guide/public-preview#刪除草稿)
+* [預覽](/guide/general-preview#預覽)
+* [預覽草稿](/guide/general-preview#預覽草稿)
+* [儲存草稿](/guide/general-preview#儲存草稿)
+* [載入草稿](/guide/general-preview#載入草稿)
+* [刪除草稿](/guide/general-preview#刪除草稿)
 
 
 ##  操作範例說明
 
-### [預覽](/guide/public-preview#預覽])
+### [預覽](/guide/general-preview#預覽])
 
 此功能非草稿預覽，而是指停用時仍可於前端預覽。用於當模組關聯性過大無法使用草稿預覽時，可用的預覽功能。
 
 此功能僅限制為以下模組支援
 * 產品
 
-### [預覽草稿](/guide/public-preview#預覽草稿)
+### [預覽草稿](/guide/general-preview#預覽草稿)
 
 1. 內容建置模組-> 編輯 -> 右上角 `草稿` 點選
 2. 下拉內容 點選草稿紀錄旁功能的 `眼睛`
@@ -39,13 +39,13 @@
 
 
 
-### [儲存草稿](/guide/public-preview#儲存草稿)
+### [儲存草稿](/guide/general-preview#儲存草稿)
 
 1. 內容建置模組-> 編輯 -> 右上角 `草稿` 點選
 2. 下拉內容 點選 `儲存草稿`
 3. 即會出現儲存的時間，例如：2020-05-14 14:45:19
 
-### [載入草稿](/guide/public-preview#載入草稿)
+### [載入草稿](/guide/general-preview#載入草稿)
 
 1. 內容建置模組-> 編輯 -> 右上角 `草稿` 點選
 2. 下拉內容 點選草稿紀錄旁功能的 `鉛筆`，例如：2020-05-14 14:45:19
@@ -54,7 +54,7 @@
 若異動資料，依舊會 auto save
 
 
-### [刪除草稿](/guide/public-preview#刪除草稿)
+### [刪除草稿](/guide/general-preview#刪除草稿)
 
 1. 內容建置模組-> 編輯 -> 右上角 `草稿` 點選
 2. 下拉內容 點選草稿紀錄旁功能的 `垃圾桶`

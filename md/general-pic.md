@@ -17,7 +17,7 @@
 |尺寸|---|依據版面需求，若有需要可自訂大小尺寸之區塊，才需設定|
 
 
-### [設定youtube影片播放](/guide/public-pic#設定youtube影片播放)
+### [設定youtube影片播放](/guide/general-pic#設定youtube影片播放)
 
 請上傳代表圖，貼入影片分享網址即可。
 
@@ -36,7 +36,7 @@
 |影片|文字|https://youtu.be/-omciNtyZBU|
 
 
-### [設定產品分類列表圖片](/guide/public-pic#設定產品分類列表圖片)
+### [設定產品分類列表圖片](/guide/general-pic#設定產品分類列表圖片)
 
 
 1. 於 `圖片` 列表中，點選功能按鈕 `圖片資訊` 
