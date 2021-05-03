@@ -756,7 +756,7 @@ class GuideBookAdDataSeeder extends Seeder
         'children' => null,
         'title' => json_encode(['zh-Hant' => '預約設定']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('reservation-config.md')]),
-        'permission_key' => 'reservationConfigShow',
+        'permission_key' => 'reservationConfigEdit',
         'sort' => 1, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
