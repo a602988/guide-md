@@ -67,7 +67,7 @@ class GuideBookAdDataSeeder extends Seeder
 
       [
         'id' => 'root-modules', 'parent' => null,
-        'children' => json_encode(['general','control-article','control-order','control-receipt', 'control-sale','control-product','control-member','control-advertising', 'control-sms','control-epaper','control-inbox','control-marcom',
+        'children' => json_encode(['general','control-article','control-order','control-receipt', 'control-sale','control-car','control-product','control-member','control-advertising', 'control-sms','control-epaper','control-inbox','control-marcom',
           'control-reservationAdmin', 'control-reservation','control-holiday','control-configuration','control-account','control-integration','control-security','control-world']),
         'title' => json_encode(['zh-Hant' => '模組功能']),
         'content' => json_encode(['zh-Hant' => null]),
@@ -389,13 +389,55 @@ class GuideBookAdDataSeeder extends Seeder
         'sort' => 10, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
+        'id' => 'control-car', 'parent' => 'root-modules',
+        'children' => json_encode(['car-payment', 'car-delivery', 'car-shipping', 'car-config',
+          'product-brand', 'product-market', 'product-arrival']),
+        'title' => json_encode(['zh-Hant' => '購物車管理']),
+        'content' => null,
+        'permission_key' => null,
+        'sort' => 6, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+
+      [
+        'id' => 'car-payment', 'parent' => 'control-car',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '付款方式']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('car-payment.md')]),
+        'permission_key' => 'carPaymentShow',
+        'sort' => 1, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
+        'id' => 'car-delivery', 'parent' => 'control-car',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '取貨方式']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('car-delivery.md')]),
+        'permission_key' => 'carDeliveryShow',
+        'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
+        'id' => 'car-shipping', 'parent' => 'control-car',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '運費設定']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('car-shipping.md')]),
+        'permission_key' => 'carShippingShow',
+        'sort' =>3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
+        'id' => 'car-config', 'parent' => 'control-car',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '購物車設定']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('car-config.md')]),
+        'permission_key' => 'carConfigShow',
+        'sort' =>4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
         'id' => 'control-product', 'parent' => 'root-modules',
         'children' => json_encode(['product-item', 'product-set', 'product-package', 'product-category',
           'product-brand', 'product-market', 'product-arrival']),
         'title' => json_encode(['zh-Hant' => '商品管理']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 5, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 7, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
 
       [
@@ -462,13 +504,14 @@ class GuideBookAdDataSeeder extends Seeder
         'permission_key' => 'productRatingShow',
         'sort' => 8, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
+
       [
         'id' => 'control-member', 'parent' => 'root-modules',
         'children' => json_encode(['member','member-upgrade','bonus-event','bonus-record','bonus-config']),
         'title' => json_encode(['zh-Hant' => '會員中心']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 6, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 8, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
         'id' => 'member', 'parent' => 'control-member',
@@ -516,7 +559,7 @@ class GuideBookAdDataSeeder extends Seeder
         'title' => json_encode(['zh-Hant' => '廣告模組']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 8, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 9, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
 
       [
@@ -535,56 +578,13 @@ class GuideBookAdDataSeeder extends Seeder
         'permission_key' => 'advertisingCategoryShow',
         'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
-
-
-      [
-        'id' => 'control-sms', 'parent' => 'root-modules',
-        'children' => json_encode(['sms-history', 'sms-template', 'sms-subscriber', 'sms-category']),
-        'title' => json_encode(['zh-Hant' => '簡訊發送']),
-        'content' => null,
-        'permission_key' => null,
-        'sort' => 9, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
-      ],
-
-      [
-        'id' => 'sms-history', 'parent' => 'control-sms',
-        'children' => null,
-        'title' => json_encode(['zh-Hant' => '發送管理']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('sms-history.md')]),
-        'permission_key' => 'smsHistoryShow',
-        'sort' => 1, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
-      ],
-      [
-        'id' => 'sms-template', 'parent' => 'control-sms',
-        'children' => null,
-        'title' => json_encode(['zh-Hant' => '範本管理']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('sms-template.md')]),
-        'permission_key' => 'smsTemplateShow',
-        'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
-      ],
-      [
-        'id' => 'sms-subscriber', 'parent' => 'control-sms',
-        'children' => null,
-        'title' => json_encode(['zh-Hant' => '訂閱名單']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('sms-subscriber.md')]),
-        'permission_key' => 'smsSubscriberShow',
-        'sort' => 3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
-      ],
-      [
-        'id' => 'sms-category', 'parent' => 'control-sms',
-        'children' => null,
-        'title' => json_encode(['zh-Hant' => '簡訊類別']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('sms-category.md')]),
-        'permission_key' => 'smsCategoryShow',
-        'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
-      ],
       [
         'id' => 'control-epaper', 'parent' => 'root-modules',
         'children' => json_encode(['epaper-history', 'epaper-template', 'epaper-subscriber', 'epaper-category']),
         'title' => json_encode(['zh-Hant' => '電子報']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 9, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 10, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
 
       [
@@ -619,13 +619,56 @@ class GuideBookAdDataSeeder extends Seeder
         'permission_key' => 'epaperCategoryShow',
         'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
+
+      [
+        'id' => 'control-sms', 'parent' => 'root-modules',
+        'children' => json_encode(['sms-history', 'sms-template', 'sms-subscriber', 'sms-category']),
+        'title' => json_encode(['zh-Hant' => '簡訊發送']),
+        'content' => null,
+        'permission_key' => null,
+        'sort' => 11, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+
+      [
+        'id' => 'sms-history', 'parent' => 'control-sms',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '發送管理']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('sms-history.md')]),
+        'permission_key' => 'smsHistoryShow',
+        'sort' => 1, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
+        'id' => 'sms-template', 'parent' => 'control-sms',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '範本管理']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('sms-template.md')]),
+        'permission_key' => 'smsTemplateShow',
+        'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
+        'id' => 'sms-subscriber', 'parent' => 'control-sms',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '訂閱名單']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('sms-subscriber.md')]),
+        'permission_key' => 'smsSubscriberShow',
+        'sort' => 3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
+        'id' => 'sms-category', 'parent' => 'control-sms',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '簡訊類別']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('sms-category.md')]),
+        'permission_key' => 'smsCategoryShow',
+        'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+
       [
         'id' => 'control-inbox', 'parent' => 'root-modules',
         'children' => json_encode(['inbox-received', 'inbox-send', 'inbox-sent', 'inbox-category']),
         'title' => json_encode(['zh-Hant' => '客服中心']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 10, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 12, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
 
       [
@@ -666,7 +709,7 @@ class GuideBookAdDataSeeder extends Seeder
         'title' => json_encode(['zh-Hant' => '行銷模組']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 10, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 13, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
 
       [
@@ -683,7 +726,7 @@ class GuideBookAdDataSeeder extends Seeder
         'title' => json_encode(['zh-Hant' => '預約管理']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 11, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 31, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
         'id' => 'reservation-personal', 'parent' => 'control-reservationAdmin',
@@ -707,7 +750,7 @@ class GuideBookAdDataSeeder extends Seeder
         'title' => json_encode(['zh-Hant' => '預約設定']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 12, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 32, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
         'id' => 'reservation-config', 'parent' => 'control-reservation',
@@ -771,12 +814,12 @@ class GuideBookAdDataSeeder extends Seeder
         'title' => json_encode(['zh-Hant' => '假日管理']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 13, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 33, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
         'id' => 'holiday-set', 'parent' => 'control-holiday',
         'children' => null,
-        'title' => json_encode(['zh-Hant' => '機動場次']),
+        'title' => json_encode(['zh-Hant' => '假日設定']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('holiday-set.md')]),
         'permission_key' => 'holidaySetShow',
         'sort' => 1, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
@@ -784,7 +827,7 @@ class GuideBookAdDataSeeder extends Seeder
       [
         'id' => 'holiday-calendar', 'parent' => 'control-holiday',
         'children' => null,
-        'title' => json_encode(['zh-Hant' => '機動場次']),
+        'title' => json_encode(['zh-Hant' => '假日日曆檢視']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('holiday-calendar.md')]),
         'permission_key' => 'holidayCalendarShow',
         'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
@@ -792,7 +835,7 @@ class GuideBookAdDataSeeder extends Seeder
       [
         'id' => 'holiday-category', 'parent' => 'control-holiday',
         'children' => null,
-        'title' => json_encode(['zh-Hant' => '機動場次']),
+        'title' => json_encode(['zh-Hant' => '假日類別']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('holiday-category.md')]),
         'permission_key' => 'holidayCategoryShow',
         'sort' => 3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
