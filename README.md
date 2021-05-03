@@ -1,5 +1,12 @@
 # 操作手冊說明
 
+## 更新說明
+
+* 更改md 檔案名稱，原本car-*** 改為cart-
+* 更改左側選單順序
+* 更改seed內容順序與更改檔案名稱相關的seed
+
+
 ## 還可seed的專案
 
 md檔案請放入：storage/app/admin/guide/zh-Hant
