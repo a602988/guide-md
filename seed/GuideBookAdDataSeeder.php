@@ -96,7 +96,7 @@ class GuideBookAdDataSeeder extends Seeder
         'title' => json_encode(['zh-Hant' => '機制說明']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('web.md')]),
         'permission_key' => null,
-        'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
         'id' => 'site', 'parent' => 'root-intro',
@@ -104,7 +104,7 @@ class GuideBookAdDataSeeder extends Seeder
         'title' => json_encode(['zh-Hant' => '功能對照']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('site.md')]),
         'permission_key' => null,
-        'sort' => 3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
         'id' => 'general', 'parent' => 'root-modules',
