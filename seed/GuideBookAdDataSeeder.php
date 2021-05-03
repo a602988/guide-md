@@ -389,9 +389,8 @@ class GuideBookAdDataSeeder extends Seeder
         'sort' => 10, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'control-car', 'parent' => 'root-modules',
-        'children' => json_encode(['car-payment', 'car-delivery', 'car-shipping', 'car-config',
-          'product-brand', 'product-market', 'product-arrival']),
+        'id' => 'control-cart', 'parent' => 'root-modules',
+        'children' => json_encode(['cart-payment', 'cart-delivery', 'cart-shipping', 'cart-config']),
         'title' => json_encode(['zh-Hant' => '購物車管理']),
         'content' => null,
         'permission_key' => null,
@@ -399,35 +398,35 @@ class GuideBookAdDataSeeder extends Seeder
       ],
 
       [
-        'id' => 'car-payment', 'parent' => 'control-car',
+        'id' => 'cart-payment', 'parent' => 'control-cart',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '付款方式']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('car-payment.md')]),
-        'permission_key' => 'carPaymentShow',
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('cart-payment.md')]),
+        'permission_key' => 'cartPaymentShow',
         'sort' => 1, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'car-delivery', 'parent' => 'control-car',
+        'id' => 'cart-delivery', 'parent' => 'control-cart',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '取貨方式']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('car-delivery.md')]),
-        'permission_key' => 'carDeliveryShow',
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('cart-delivery.md')]),
+        'permission_key' => 'cartDeliveryShow',
         'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'car-shipping', 'parent' => 'control-car',
+        'id' => 'cart-shipping', 'parent' => 'control-cart',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '運費設定']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('car-shipping.md')]),
-        'permission_key' => 'carShippingShow',
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('cart-shipping.md')]),
+        'permission_key' => 'cartShippingShow',
         'sort' =>3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'car-config', 'parent' => 'control-car',
+        'id' => 'cart-config', 'parent' => 'control-cart',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '購物車設定']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('car-config.md')]),
-        'permission_key' => 'carConfigShow',
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('cart-config.md')]),
+        'permission_key' => 'cartConfigEdit',
         'sort' =>4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
