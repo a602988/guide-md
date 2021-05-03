@@ -40,7 +40,7 @@
 * [vip會員](/guide/member-upgrade#VIP會員)
 * [VVIP會員](/guide/member-upgrade#VVIP會員)
 
-### [VIP會員](/guide/member-upgrade#VIP會員)
+### [VIP會員](/guide/member-upgrade#VIP會員){#VIP會員}
 
 單次購物滿5000升等vip會員，一年內都未購買則降等
 
@@ -64,7 +64,7 @@
 |排序|`數字`|1|
 |啟用狀態|`單選`|啟用|
 
-### [VVIP會員](/guide/member-upgrade#VVIP會員)
+### [VVIP會員](/guide/member-upgrade#VVIP會員){#VVIP會員}
 
 一年內滿10000升等金卡會員，一年未滿8000降等
 

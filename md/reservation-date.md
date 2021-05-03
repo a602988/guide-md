@@ -23,7 +23,7 @@
 
 * [建立場次日期](/guide/reservation-date#建立場次日期)
 
-### [建立場次日期](/guide/reservation-date#建立場次日期)
+### [建立場次日期](/guide/reservation-date#建立場次日期){#建立場次日期}
 
 課程可建立可依據實際的日期區間。
 

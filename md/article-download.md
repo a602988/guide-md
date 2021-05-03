@@ -36,7 +36,7 @@
 * [新增檔案下載](/guide/article-download#新增檔案下載)
 * [新增檔案下載分類](/guide/article-download#新增檔案下載分類)
 
-### [新增檔案下載](/guide/article-download#新增檔案下載)
+### [新增檔案下載](/guide/article-download#新增檔案下載){#新增檔案下載}
 
 1. 於 `內容管理->檔案下載` 列表中，點選右上角按鈕 `新增` 
 2. 進去新增頁面，設定以下內容 ( 範例 )，
@@ -62,7 +62,7 @@
 
 
 
-### [新增檔案下載分類](/guide/article-download#新增檔案下載分類)
+### [新增檔案下載分類](/guide/article-download#新增檔案下載分類){#新增檔案下載分類}
 
 功能路徑：`內容管理->內容類別管理`
 

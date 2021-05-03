@@ -39,7 +39,7 @@
 * [新增營業據點](/guide/article-location#新增營業據點)
 * [新增營業據點分類](/guide/article-location#新增營業據點分類)
 
-### [新增營業據點](/guide/article-location#新增營業據點)
+### [新增營業據點](/guide/article-location#新增營業據點){#新增營業據點}
 
 1. 於 `內容管理->營業據點` 列表中，點選右上角按鈕 `新增` 
 2. 進去新增頁面，設定以下內容 ( 範例 )，
@@ -71,7 +71,7 @@
 
 
 
-### [新增營業據點分類](/guide/article-location#新增營業據點分類)
+### [新增營業據點分類](/guide/article-location#新增營業據點分類){#新增營業據點分類}
 
 功能路徑：`內容管理->內容類別管理`
 

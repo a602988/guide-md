@@ -32,7 +32,7 @@
 * [新增廣告](/guide/advertising#新增廣告)
 * [廣告錨點連結](/guide/advertising-category#廣告錨點連結)
 
-### [新增廣告](/guide/advertising#新增廣告)
+### [新增廣告](/guide/advertising#新增廣告){#新增廣告}
 
 1. 於 `廣告模組->廣告管理` 列表中，點選右上角按鈕 `新增` 
 2. 進去編輯頁面，設定以下內容 _( 範例 )_，

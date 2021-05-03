@@ -43,7 +43,7 @@
 
 
 
-### [A分類商品9折](/guide/sale-level#A分類商品9折)
+### [A分類商品9折](/guide/sale-level#A分類商品9折){#A分類商品9折}
 
 此為商品級折扣。
 
@@ -58,7 +58,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [A商品9折](/guide/sale-level#A分類商品9折)
+### [A商品9折](/guide/sale-level#A分類商品9折){#A分類商品9折}
 
 此為商品級折扣。
 
@@ -74,7 +74,7 @@
 |啟用狀態|`單選`|啟用|
 
 
-### [vip全館9折](/guide/sale-level#vip全館9折)
+### [vip全館9折](/guide/sale-level#vip全館9折){#vip全館9折}
 
 此為商品級折扣。
 

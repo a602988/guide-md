@@ -28,7 +28,7 @@
 * [新增廣告位置](/guide/advertising-category#新增廣告位置)
 * [廣告錨點連結](/guide/advertising-category#廣告錨點連結)
 
-### [新增廣告位置](/guide/advertising-category#新增廣告位置)
+### [新增廣告位置](/guide/advertising-category#新增廣告位置){#新增廣告位置}
 
 1. 於 `廣告模組->廣告分類` 列表中，點選右上角按鈕 `新增` 
 2. 進去編輯頁面，設定以下內容 _( 範例 )_，
@@ -45,7 +45,7 @@
 |隨機廣告|`單選`|隨機|
 |啟用狀態|`單選`|啟用|
 
-### [廣告錨點連結](/guide/advertising-category#廣告錨點連結)
+### [廣告錨點連結](/guide/advertising-category#廣告錨點連結){#廣告錨點連結}
 
 1. 於 `廣告模組->廣告分類 ` 列表中，點選右上角按鈕 `新增` ro 異動該筆資料
 2. 進去編輯頁面，設定以下內容 _( 範例 )_，

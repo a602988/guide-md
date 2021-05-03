@@ -22,7 +22,7 @@
 
 * [建立場次群組](/guide/reservation-group#建立場次群組)
 
-### [建立場次群組](/guide/reservation-group#建立場次群組)
+### [建立場次群組](/guide/reservation-group#建立場次群組){#建立場次群組}
 
 
 1. 於 `預約設定->場次群組` 列表中，點選右上角按鈕 `新增` 

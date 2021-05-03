@@ -27,7 +27,7 @@
 
 ## 重要設定
 
-### [電子郵件伺服器](/guide/service-config#電子郵件伺服器)
+### [電子郵件伺服器](/guide/service-config#電子郵件伺服器){#電子郵件伺服器}
 
 請設定發信主機，與使用者收到信件時，顯示的來源與名稱。
 
@@ -56,7 +56,7 @@
 
 * 信件將顯示為：大樹會員購物網 server@greattree.com.tw 透過 smtpcorp.com
 
-### [電子報伺服器](/guide/service-config#電子報伺服器)
+### [電子報伺服器](/guide/service-config#電子報伺服器){#電子報伺服器}
 
 請設定電子報發信主機。
 

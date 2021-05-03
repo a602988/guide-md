@@ -25,7 +25,7 @@
 
 * [建立場次人數](/guide/reservation-number#建立場次人數)
 
-### [建立場次人數](/guide/reservation-number#建立場次人數)
+### [建立場次人數](/guide/reservation-number#建立場次人數){#建立場次人數}
 
 
 1. 於 `預約設定->場次群組` 列表中，點選右上角按鈕 `新增` 
