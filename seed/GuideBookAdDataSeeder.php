@@ -67,7 +67,7 @@ class GuideBookAdDataSeeder extends Seeder
 
       [
         'id' => 'root-modules', 'parent' => null,
-        'children' => json_encode(['general','control-article','control-order','control-receipt', 'control-sale','control-car','control-product','control-member','control-advertising', 'control-sms','control-epaper','control-inbox','control-marcom',
+        'children' => json_encode(['general','control-article','control-order','control-receipt', 'control-sale','control-car','control-product','control-member','control-advertising', 'control-sms','control-epaper','control-inbox','control-statistic','control-marcom',
           'control-reservationAdmin', 'control-reservation','control-holiday','control-configuration','control-account','control-integration','control-security','control-world']),
         'title' => json_encode(['zh-Hant' => '模組功能']),
         'content' => json_encode(['zh-Hant' => null]),
@@ -703,12 +703,45 @@ class GuideBookAdDataSeeder extends Seeder
         'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
+        'id' => 'control-statistic', 'parent' => 'root-modules',
+        'children' => json_encode(['statistic-product-set', 'statistic-order-form', 'statistic-member-order']),
+        'title' => json_encode(['zh-Hant' => '統計分析']),
+        'content' => null,
+        'permission_key' => null,
+        'sort' => 13, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+
+      [
+        'id' => 'statistic-product-set', 'parent' => 'control-statistic',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '商品分析']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('statistic-product-set.md')]),
+        'permission_key' => 'statisticProductSetShow',
+        'sort' => 1, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
+        'id' => 'statistic-order-form', 'parent' => 'control-statistic',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '訂單統計']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('statistic-order-form.md')]),
+        'permission_key' => 'statisticOrderFormShow',
+        'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
+        'id' => 'statistic-member-order', 'parent' => 'control-statistic',
+        'children' => null,
+        'title' => json_encode(['zh-Hant' => '會員消費']),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('statistic-member-order.md')]),
+        'permission_key' => 'statisticMemberOrderShow',
+        'sort' => 3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+      ],
+      [
         'id' => 'control-marcom', 'parent' => 'root-modules',
         'children' => json_encode(['short-link']),
         'title' => json_encode(['zh-Hant' => '行銷模組']),
         'content' => null,
         'permission_key' => null,
-        'sort' => 13, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 14, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
 
       [
