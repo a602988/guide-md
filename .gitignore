@@ -1,0 +1,28 @@
+# Develop station setting
+/.idea
+/.vscode
+
+# Thumbnail cache files
+[Tt]humbs.db
+ehthumbs.db
+ehthumbs_vista.db
+._*
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+.Trash-*
+.DS_Store
+.AppleDouble
+.AppleDesktop
+.LSOverride
+.directory
+
+# Disk system file
+$RECYCLE.BIN/
+.nfs*
+
+# shortcuts
+*.lnk

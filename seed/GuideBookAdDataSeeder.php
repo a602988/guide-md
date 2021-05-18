@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
 use Minmax\Base\Models\GuideBook;
 
 class GuideBookAdDataSeeder extends Seeder
@@ -20,7 +19,7 @@ class GuideBookAdDataSeeder extends Seeder
   {
     $this->timestamp = date('Y-m-d H:i:s');
 
-    $this->insertAdGuide();
+    $this->insertAllGuide();
   }
 
   /**
@@ -44,11 +43,11 @@ class GuideBookAdDataSeeder extends Seeder
   }
 
   /**
-   * Insert base guide book data.
+   * Insert all guide book data.
    *
    * @return void
    */
-  protected function insertAdGuide()
+  protected function insertAllGuide()
   {
     if ($parent = GuideBook::find('root-modules')) {
       $parent->children = array_merge($parent->children ?? [], ['control-advertising']);
@@ -58,7 +57,7 @@ class GuideBookAdDataSeeder extends Seeder
     $guideData = [
       [
         'id' => 'root-intro', 'parent' => null,
-        'children' => json_encode(['index', 'default', 'web', 'site']),
+        'children' => json_encode(['index', 'workflow', 'operations', 'mapping']),
         'title' => json_encode(['zh-Hant' => '操作介紹']),
         'content' => json_encode(['zh-Hant' => null]),
         'permission_key' => null,
@@ -67,13 +66,19 @@ class GuideBookAdDataSeeder extends Seeder
 
       [
         'id' => 'root-modules', 'parent' => null,
-        'children' => json_encode(['general','control-article','control-order','control-receipt', 'control-sale','control-car','control-product','control-member','control-advertising', 'control-sms','control-epaper','control-inbox','control-statistic','control-marcom',
-          'control-reservationAdmin', 'control-reservation','control-holiday','control-configuration','control-account','control-integration','control-security','control-world']),
+        'children' => json_encode([
+            'general', 'control-article', 'control-order', 'control-financial', 'control-sale', 'control-cart',
+            'control-product', 'control-member', 'control-advertising', 'control-sms', 'control-epaper',
+            'control-inbox','control-statistic','control-marcom',
+            'control-reservationAdmin', 'control-reservation', 'control-holiday',
+            'control-configuration', 'control-account', 'control-integration', 'control-security', 'control-world'
+        ]),
         'title' => json_encode(['zh-Hant' => '模組功能']),
         'content' => json_encode(['zh-Hant' => null]),
         'permission_key' => null,
         'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
+
       [
         'id' => 'index', 'parent' => 'root-intro',
         'children' => null,
@@ -83,26 +88,26 @@ class GuideBookAdDataSeeder extends Seeder
         'sort' => 1, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'default', 'parent' => 'root-intro',
+        'id' => 'workflow', 'parent' => 'root-intro',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '操作流程']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('default.md')]),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('workflow.md')]),
         'permission_key' => null,
         'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'web', 'parent' => 'root-intro',
+        'id' => 'operations', 'parent' => 'root-intro',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '機制說明']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('web.md')]),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('operations.md')]),
         'permission_key' => null,
         'sort' => 3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'site', 'parent' => 'root-intro',
+        'id' => 'mapping', 'parent' => 'root-intro',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '功能對照']),
-        'content' => json_encode(['zh-Hant' => $this->getMarkdown('site.md')]),
+        'content' => json_encode(['zh-Hant' => $this->getMarkdown('mapping.md')]),
         'permission_key' => null,
         'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
@@ -144,12 +149,16 @@ class GuideBookAdDataSeeder extends Seeder
         'title' => json_encode(['zh-Hant' => '圖片設定']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('general-pic.md')]),
         'permission_key' => null,
-        'sort' => 3, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
+        'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
 
       [
         'id' => 'control-article', 'parent' => 'root-modules',
-        'children' => json_encode(['article-news', 'article-page', 'article-faq', 'article-download', 'article-column', 'article-location', 'article-team', 'article-element', 'article-category']),
+        'children' => json_encode([
+            'article-news', 'article-page', 'article-faq', 'article-download', 'article-column',
+            'article-location', 'article-team', 'article-element',
+            'article-category'
+        ]),
         'title' => json_encode(['zh-Hant' => '內容管理']),
         'content' => null,
         'permission_key' => null,
@@ -269,7 +278,7 @@ class GuideBookAdDataSeeder extends Seeder
         'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'control-receipt', 'parent' => 'root-modules',
+        'id' => 'control-financial', 'parent' => 'root-modules',
         'children' => json_encode(['receipt', 'allowance', 'receipt-number']),
         'title' => json_encode(['zh-Hant' => '會計管理']),
         'content' => null,
@@ -277,7 +286,7 @@ class GuideBookAdDataSeeder extends Seeder
         'sort' => 4, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'receipt', 'parent' => 'control-receipt',
+        'id' => 'receipt', 'parent' => 'control-financial',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '發票管理']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('receipt.md')]),
@@ -285,7 +294,7 @@ class GuideBookAdDataSeeder extends Seeder
         'sort' => 1, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'allowance', 'parent' => 'control-receipt',
+        'id' => 'allowance', 'parent' => 'control-financial',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '折讓單管理']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('allowance.md')]),
@@ -293,7 +302,7 @@ class GuideBookAdDataSeeder extends Seeder
         'sort' => 2, 'active' => true, 'created_at' => $this->timestamp, 'updated_at' => $this->timestamp
       ],
       [
-        'id' => 'receipt-number', 'parent' => 'control-receipt',
+        'id' => 'receipt-number', 'parent' => 'control-financial',
         'children' => null,
         'title' => json_encode(['zh-Hant' => '發票字軌管理']),
         'content' => json_encode(['zh-Hant' => $this->getMarkdown('receipt-number.md')]),
