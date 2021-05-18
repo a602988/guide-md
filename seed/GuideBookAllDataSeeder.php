@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Minmax\Base\Models\GuideBook;
 
-class GuideBookAdDataSeeder extends Seeder
+class GuideBookAllDataSeeder extends Seeder
 {
   /**
    * @var string $timestamp
@@ -20,26 +20,6 @@ class GuideBookAdDataSeeder extends Seeder
     $this->timestamp = date('Y-m-d H:i:s');
 
     $this->insertAllGuide();
-  }
-
-  /**
-   * Reverse the migrations.
-   *
-   * @return void
-   */
-  public function down()
-  {
-    $deleteParents = ['control-advertising'];
-
-    if ($parent = GuideBook::find('root-modules')) {
-      $parent->children = array_diff($parent->children ?? [], $deleteParents);
-      $parent->save();
-    }
-
-    \DB::table('guide_book')
-      ->whereIn('id', $deleteParents)
-      ->orWhereIn('parent', $deleteParents)
-      ->delete();
   }
 
   /**
